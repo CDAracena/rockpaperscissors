@@ -9,3 +9,7 @@ img {
 .scoreboardRow {
   box-shadow: 1px 1px 1px 1px lightgrey;
 }
+
+.optionCol:hover {
+  cursor: pointer;
+}
