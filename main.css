@@ -1,15 +1,118 @@
 .optionCol {
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  margin: 15px;
+  font-family: 'Slackey', cursive;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body {
+  background-color: whitesmoke;
 }
 
 img {
-  width: 70%;
+  width: 60%;
 }
 
 .scoreboardRow {
   box-shadow: 1px 1px 1px 1px lightgrey;
+  font-family: 'Bangers', cursive;
+  background: -webkit-gradient(linear, 65% 46%, 28% 97%, from(#6BDB16), to(#C8E026), color-stop(.6, #3A4014));
+  color: #231d1d;
+  text-shadow: 1px 1px #c8e026;
 }
 
 .optionCol:hover {
   cursor: pointer;
+}
+
+.jumbotron {
+  background: -webkit-gradient(linear, 65% 46%, 28% 97%, from(#6BDB16), to(#C8E026), color-stop(.6, #3A4014));
+  box-shadow: 1px 1px 1px 1px darkgrey;
+  color: #231d1d;
+  text-shadow: 1px 1px #c8e026;
+  font-family: 'Bangers', cursive;
+}
+
+.paperCol {
+  background-color: forestgreen;
+}
+
+.paperCol:hover {
+  animation: pulsePaper 0.6s infinite alternate;
+}
+
+.rockCol {
+  background-color: red;
+}
+
+.rockCol:hover {
+  animation: pulseRock 0.6s infinite alternate;
+}
+
+.scissorCol {
+  background-color: cornflowerblue;
+}
+
+.scissorCol:hover {
+  animation: pulseScissor 0.6s infinite alternate;
+}
+
+@keyframes pulseRock {
+  0% {
+    box-shadow: 2px 2px 2px 2px lightgrey;
+  }
+  25% {
+    box-shadow: 2px 2px 3px 3px red;
+  }
+  50% {
+    box-shadow: 4px 4px 6px 6px red;
+  }
+  75% {
+    box-shadow: 5px 5px 8px 8px red;
+  }
+  100% {
+    box-shadow: 5px 5px 10px 10px red;
+  }
+}
+
+@keyframes pulsePaper {
+  0% {
+    box-shadow: 2px 2px 2px 2px lightgrey;
+  }
+  25% {
+    box-shadow: 2px 2px 3px 3px forestgreen;
+  }
+  50% {
+    box-shadow: 4px 4px 6px 6px forestgreen;
+  }
+  75% {
+    box-shadow: 5px 5px 8px 8px forestgreen;
+  }
+  100% {
+    box-shadow: 5px 5px 10px 10px forestgreen;
+  }
+}
+
+@keyframes pulseScissor {
+  0% {
+    box-shadow: 2px 2px 2px 2px lightgrey;
+  }
+  25% {
+    box-shadow: 2px 2px 3px 3px cornflowerblue;
+  }
+  50% {
+    box-shadow: 4px 4px 6px 6px cornflowerblue;
+  }
+  75% {
+    box-shadow: 5px 5px 8px 8px cornflowerblue;
+  }
+  100% {
+    box-shadow: 5px 5px 10px 10px cornflowerblue;
+  }
+}
+
+.stats {
+  font-size: 20px;
 }
