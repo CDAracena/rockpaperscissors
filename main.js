@@ -27,7 +27,14 @@ $(document).ready(function() {
         cpuWinScore.innerHTML = cpuWins
         toastr.error("CPU Wins!")
       }
+      if (cpuWins === 10) {
+        alert('Winner: Computer!')
+      } else if (userWins === 10) {
+        alert("Winner: Human!")
+      }
     })
   }
+
+
 
 })
