@@ -16,9 +16,8 @@ img {
 }
 
 .scoreboardRow {
-  box-shadow: 1px 1px 1px 1px lightgrey;
   font-family: 'Bangers', cursive;
-  background: -webkit-gradient(linear, 65% 46%, 28% 97%, from(#6BDB16), to(#C8E026), color-stop(.6, #3A4014));
+  background: -webkit-gradient(linear, 65% 46%, 28% 97%, from(#C8E026), to(#6BDB16), color-stop(.6, #3A4014));
   color: #231d1d;
   text-shadow: 1px 1px #c8e026;
   padding-bottom: 15px;
@@ -38,80 +37,84 @@ img {
 }
 
 .paperCol {
-  background-color: forestgreen;
+  background: -webkit-gradient(linear, 21% 6%, 53% 100%, from(#61a91a), to(#BCCBE0));
 }
 
 .paperCol:hover {
   animation: pulsePaper 0.6s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .rockCol {
-  background-color: red;
+  background: -webkit-gradient(linear, 21% 6%, 53% 100%, from(#F70000), to(#BCCBE0));
 }
 
 .rockCol:hover {
   animation: pulseRock 0.6s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .scissorCol {
-  background-color: cornflowerblue;
+  background: -webkit-gradient(linear, 21% 6%, 53% 100%, from(#6495ed), to(#BCCBE0));
+  ;
 }
 
 .scissorCol:hover {
   animation: pulseScissor 0.6s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes pulseRock {
   0% {
-    box-shadow: 2px 2px 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px 1px red;
   }
   25% {
-    box-shadow: 2px 2px 3px 3px red;
+    box-shadow: 2px 2px 3px 1px red;
   }
   50% {
-    box-shadow: 4px 4px 6px 6px red;
+    box-shadow: 4px 4px 4px 1px red;
   }
   75% {
-    box-shadow: 5px 5px 8px 8px red;
+    box-shadow: 5px 5px 5px 1px red;
   }
   100% {
-    box-shadow: 5px 5px 10px 10px red;
+    box-shadow: 5px 5px 6px 1px red;
   }
 }
 
 @keyframes pulsePaper {
   0% {
-    box-shadow: 2px 2px 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px 1px forestgreen;
   }
   25% {
-    box-shadow: 2px 2px 3px 3px forestgreen;
+    box-shadow: 2px 2px 3px 1px forestgreen;
   }
   50% {
-    box-shadow: 4px 4px 6px 6px forestgreen;
+    box-shadow: 4px 4px 4px 1px forestgreen;
   }
   75% {
-    box-shadow: 5px 5px 8px 8px forestgreen;
+    box-shadow: 5px 5px 5px 1px forestgreen;
   }
   100% {
-    box-shadow: 5px 5px 10px 10px forestgreen;
+    box-shadow: 5px 5px 6px 1px forestgreen;
   }
 }
 
 @keyframes pulseScissor {
   0% {
-    box-shadow: 2px 2px 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px 1px cornflowerblue;
   }
   25% {
-    box-shadow: 2px 2px 3px 3px cornflowerblue;
+    box-shadow: 2px 2px 3px 1px cornflowerblue;
   }
   50% {
-    box-shadow: 4px 4px 6px 6px cornflowerblue;
+    box-shadow: 4px 4px 4px 1px cornflowerblue;
   }
   75% {
-    box-shadow: 5px 5px 8px 8px cornflowerblue;
+    box-shadow: 5px 5px 5px 1px cornflowerblue;
   }
   100% {
-    box-shadow: 5px 5px 10px 10px cornflowerblue;
+    box-shadow: 5px 5px 6px 1px cornflowerblue;
   }
 }
 
@@ -179,9 +182,21 @@ a:hover {
     font-size: 10px;
   }
   .optionCol {
-    width: 100px;
-    margin: 10px;
+    width: 150px;
+    margin: 5px;
+  }
+  .optionCol:hover {
+    z-index: 1;
   }
   .optionText {
     font-size: 1.15rem;
   }
+  img {
+    width: 100%
+  }
+  .optionsRow {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+  }
+}

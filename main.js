@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   let userWins = 0;
   let cpuWins = 0;
-
+  toastr.options.timeOut = 30;
   toastr.options.showMethod = 'slideDown';
   toastr.options.closeButton = true;
 
