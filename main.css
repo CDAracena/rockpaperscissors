@@ -167,3 +167,21 @@ a:hover {
   background-color: #7edc1b;
   text-shadow: 1px 1px #c8e026;
 }
+
+@media screen and (max-width: 400px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  .scores {
+    font-size: 1.5rem;
+  }
+  .stats {
+    font-size: 10px;
+  }
+  .optionCol {
+    width: 100px;
+    margin: 10px;
+  }
+  .optionText {
+    font-size: 1.15rem;
+  }
