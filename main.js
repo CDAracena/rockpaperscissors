@@ -28,13 +28,19 @@ $(document).ready(function() {
         toastr.error("CPU Wins!")
       }
       if (cpuWins === 10) {
-        alert('Winner: Computer!')
+        document.querySelector('.modal').style.display = "flex";
+        document.querySelector('.modal').style.backgroundColor = "#c8e026"
+        document.querySelector('.modal-content').classList.add('computerWinsModal');
+        document.querySelector('.modal-title').innerText = "SORRY";
+        document.querySelector('.modal-body').innerText = "COMPUTER WINS";
       } else if (userWins === 10) {
-        alert("Winner: Human!")
+        document.querySelector('.modal').style.display = "flex";
+        document.querySelector('.modal').style.backgroundColor = "#7edc1b";
+        document.querySelector('.modal-content').classList.add('humanWinsModal');
+        document.querySelector('.modal-title').innerText = "CONGRATULATIONS!";
+        document.querySelector('.modal-body').innerText = "YOU WIN!!!!";
       }
     })
   }
-
-
 
 })
